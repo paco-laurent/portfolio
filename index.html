@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paco Laurent — Portfolio</title>
+  <meta name="description" content="Portfolio de Paco Laurent : projets, compétences, contact." />
+
+  <!-- Open Graph (partage) -->
+  <meta property="og:title" content="Paco Laurent — Portfolio" />
+  <meta property="og:description" content="Projets, compétences, contact." />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="assets/icon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="#top" aria-label="Retour en haut">
+        <span class="logo__dot"></span>
+        <span>Paco Laurent</span>
+      </a>
+
+      <nav class="nav" aria-label="Navigation principale">
+        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+          <span class="nav__bar"></span>
+          <span class="nav__bar"></span>
+          <span class="nav__bar"></span>
+          <span class="sr-only">Ouvrir le menu</span>
+        </button>
+
+        <ul class="nav__menu" id="navMenu">
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#skills">Compétences</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <button class="btn btn--ghost" id="themeToggle" type="button" aria-label="Changer le thème">
+              🌙
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Profil -->
+  <main>
+    <section class="hero" id="top">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="badge">Disponible pour stage / alternance</p>
+          <h1>Salut, moi c’est <span class="accent">Paco Laurent</span>.</h1>
+          <p class="hero__subtitle">
+            Étudiant développeur <strong>Front-End</strong> / <strong>Full-Stack</strong>.
+            J’aime construire des interfaces propres, rapides et utiles.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn" href="#projects">Voir mes projets</a>
+            <a class="btn btn--ghost" href="assets/CV-paco-laurent.pdf" target="_blank" rel="noreferrer">
+              Télécharger mon CV
+            </a>
+          </div>
+
+          <div class="hero__links">
+            <a class="link" href="https://www.linkedin.com/in/paco-laurent/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="link" href="mailto:pacolaurent24@gmail.com">Email</a>
+          </div>
+        </div>
+
+        <div class="hero__card">
+          <div class="profile">
+            <div class="profile__avatar" aria-hidden="true">PL</div>
+            <div>
+              <p class="profile__name">Paco Laurent</p>
+              <p class="profile__role">BUT Informatique • 2ème année</p>
+            </div>
+          </div>
+
+          <p class="muted">
+            Ouvert aux opportunités •
+            <span class="pill">Stage</span> <span class="pill">Alternance</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head">
+          <h2>À propos</h2>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Ce que je fais</h3>
+            <p>
+              Je suis étudiant en BUT informatique à Gradignan en deuxième année.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Ce que je cherche</h3>
+            <p>
+              Un stage/alternance pour travailler sur des projets concrets,
+              en équipe, avec de bonnes pratiques.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Ce qui me motive</h3>
+            <p>
+              Apprendre vite, livrer proprement, et construire des features utiles.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section__head">
+          <h2>Compétences</h2>
+        </div>
+
+        <div class="skills">
+          <div class="skill">
+            <h3>Front-End</h3>
+            <ul>
+              <li>HTML, CSS, Bootstrap</li>
+              <li>JavaScript / TypeScript</li>
+              <li>React</li>
+            </ul>
+          </div>
+
+          <div class="skill">
+            <h3>Back-End</h3>
+            <ul>
+              <li>PHP, Java, Python</li>
+              <li>API REST, Symfony</li>
+              <li>SQL (MySQL, Oracle)</li>
+            </ul>
+          </div>
+
+          <div class="skill">
+            <h3>Outils</h3>
+            <ul>
+              <li>Git / Gitlab</li>
+              <li>Tests, CI/CD</li>
+              <li>Podman, Qemu</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__head">
+          <h2>Projets</h2>
+        </div>
+
+        <div class="projects">
+          <!-- Projet 1 -->
+          <article class="project card">
+            <div class="project__top">
+              <h3>Projet 1 - Musical puzzle</h3>
+              <span class="tag">React</span>
+              <span class="tag">API</span>
+              <span class="tag">Auth</span>
+            </div>
+            <p>
+              Site pour jouer à un puzzle musical collaboratif en React.
+            </p>
+            <ul class="project__list">
+              <li>✔ Authentification</li>
+              <li>✔ Requête API</li>
+              <li>✔ Contextes, hooks, providers...</li>
+            </ul>
+            <!--<div class="project__links">
+              <a class="btn btn&#45;&#45;small" href="projets/projet-1.html">Voir</a>
+            </div>-->
+          </article>
+
+          <!-- Projet 2 -->
+          <article class="project card">
+            <div class="project__top">
+              <h3>Projet 2 - Gestion de tournois</h3>
+              <span class="tag">SQL</span>
+              <span class="tag">PHP/Symfony</span>
+              <span class="tag">Bootstrap</span>
+            </div>
+            <p>
+              Application web de gestion de tournois à destination d’établissements scolaire
+            </p>
+            <ul class="project__list">
+              <li>✔ Analyse du besoin client</li>
+              <li>✔ CRUD + validation</li>
+              <li>✔ Base de données</li>
+            </ul>
+            <!--<div class="project__links">
+              <a class="btn btn&#45;&#45;small" href="projet-1.html">Voir</a>
+            </div>-->
+          </article>
+
+          <!-- Projet 3 -->
+          <article class="project card">
+            <div class="project__top">
+              <h3>Projet 3 - Site web statique</h3>
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+            </div>
+            <p>
+              Création d'un site web statique sur la santé, avec un accent sur la qualité du code.
+            </p>
+            <ul class="project__list">
+              <li>✔ Site responsive</li>
+              <li>✔ Formulaire de contact</li>
+              <li>✔ Lighthouse Performance : 95/100</li>
+            </ul>
+            <!--<div class="project__links">
+              <a class="btn btn&#45;&#45;small" href="projet-1.html">Voir</a>
+            </div>-->
+          </article>
+          <!-- Projet 4 -->
+          <article class="project card">
+            <div class="project__top">
+              <h3>Projet 4 - Gestion de BDD</h3>
+              <span class="tag">SQL</span>
+              <span class="tag">Python</span>
+              <span class="tag">C#</span>
+            </div>
+            <p>
+              Gestion d’une BDD avec automatisation des requêtes et interface graphique.
+            </p>
+            <ul class="project__list">
+              <li>✔ UCréation / modélisation de la BDD</li>
+              <li>✔ Requêtes automatisées en Python</li>
+              <li>✔ Interface C# pour afficher les données</li>
+            </ul>
+            <!--<div class="project__links">
+              <a class="btn btn&#45;&#45;small" href="projet-1.html">Voir</a>
+            </div>-->
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section__head">
+          <h2>Contact</h2>
+        </div>
+
+        <div class="contact card">
+          <p>
+            Tu peux me contacter par email :
+            <a class="link" href="mailto:pacolaurent24@gmail.com">pacolaurent24@gmail.com</a>
+          </p>
+
+          <form class="form" id="contactForm" action="https://formspree.io/f/mbdavvkr" method="POST">
+            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+            <div class="form__row">
+              <label>
+                Nom
+                <input type="text" name="name" placeholder="Paco Laurent" required />
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" placeholder="ton@email.com" required />
+              </label>
+            </div>
+
+            <label>
+              Message
+              <textarea name="message" rows="5" placeholder="Ton message..." required></textarea>
+            </label>
+            <button class="btn" type="submit">Envoyer</button>
+            <p class="muted small" id="formNote"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="muted">© <span id="year"></span> Paco Laurent. Tous droits réservés.</p>
+      <a class="link" href="#top">Retour en haut ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
