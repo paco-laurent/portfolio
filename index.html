@@ -6,7 +6,6 @@
   <title>Paco Laurent — Portfolio</title>
   <meta name="description" content="Portfolio de Paco Laurent : projets, compétences, contact." />
 
-  <!-- Open Graph (partage) -->
   <meta property="og:title" content="Paco Laurent — Portfolio" />
   <meta property="og:description" content="Projets, compétences, contact." />
   <meta property="og:type" content="website" />
@@ -47,16 +46,16 @@
     </div>
   </header>
 
-  <!-- Profil -->
+  <!-- Profile -->
   <main>
     <section class="hero" id="top">
       <div class="container hero__grid">
         <div class="hero__content">
           <p class="badge">Disponible pour stage / alternance</p>
-          <h1>Salut, moi c’est <span class="accent">Paco Laurent</span>.</h1>
+          <h1>Salut, moi c'est <span class="accent">Paco Laurent</span>.</h1>
           <p class="hero__subtitle">
             Étudiant développeur <strong>Front-End</strong> / <strong>Full-Stack</strong>.
-            J’aime construire des interfaces propres, rapides et utiles.
+            J'aime construire des interfaces propres, rapides et utiles.
           </p>
 
           <div class="hero__cta">
@@ -82,8 +81,7 @@
           </div>
 
           <p class="muted">
-            Ouvert aux opportunités •
-            <span class="pill">Stage</span> <span class="pill">Alternance</span>
+            Ouvert aux opportunités • Fortement motivé • Toujours prêt à apprendre
           </p>
         </div>
       </div>
@@ -113,7 +111,8 @@
           <article class="card">
             <h3>Ce qui me motive</h3>
             <p>
-              Apprendre vite, livrer proprement, et construire des features utiles.
+              Apprendre de nouvelles technologies, relever des défis techniques,
+              et contribuer à des projets qui ont un impact.
             </p>
           </article>
         </div>
@@ -166,90 +165,64 @@
         </div>
 
         <div class="projects">
-          <!-- Projet 1 -->
-          <article class="project card">
-            <div class="project__top">
-              <h3>Projet 1 - Musical puzzle</h3>
+          <!-- Project 1 -->
+          <button class="project-card" data-project="0">
+            <img class="project-card__image" src="" alt="Musical puzzle">
+            <h3>Musical puzzle</h3>
+            <p class="project-card__subtitle">Puzzle musical collaboratif en React</p>
+            <div class="project-card__tags">
               <span class="tag">React</span>
               <span class="tag">API</span>
               <span class="tag">Auth</span>
             </div>
-            <p>
-              Site pour jouer à un puzzle musical collaboratif en React.
-            </p>
-            <ul class="project__list">
-              <li>✔ Authentification</li>
-              <li>✔ Requête API</li>
-              <li>✔ Contextes, hooks, providers...</li>
-            </ul>
-            <!--<div class="project__links">
-              <a class="btn btn&#45;&#45;small" href="projets/projet-1.html">Voir</a>
-            </div>-->
-          </article>
+          </button>
 
-          <!-- Projet 2 -->
-          <article class="project card">
-            <div class="project__top">
-              <h3>Projet 2 - Gestion de tournois</h3>
+          <!-- Project 2 -->
+          <button class="project-card" data-project="1">
+            <img class="project-card__image" src="" alt="Gestion de tournois">
+            <h3>Gestion de tournois</h3>
+            <p class="project-card__subtitle">Application de gestion pour établissements</p>
+            <div class="project-card__tags">
               <span class="tag">SQL</span>
               <span class="tag">PHP/Symfony</span>
               <span class="tag">Bootstrap</span>
             </div>
-            <p>
-              Application web de gestion de tournois à destination d’établissements scolaire
-            </p>
-            <ul class="project__list">
-              <li>✔ Analyse du besoin client</li>
-              <li>✔ CRUD + validation</li>
-              <li>✔ Base de données</li>
-            </ul>
-            <!--<div class="project__links">
-              <a class="btn btn&#45;&#45;small" href="projet-1.html">Voir</a>
-            </div>-->
-          </article>
+          </button>
 
-          <!-- Projet 3 -->
-          <article class="project card">
-            <div class="project__top">
-              <h3>Projet 3 - Site web statique</h3>
+          <!-- Project 3 -->
+          <button class="project-card" data-project="2">
+            <img class="project-card__image" src="" alt="Site web statique">
+            <h3>Site web statique</h3>
+            <p class="project-card__subtitle">Site responsive sur la santé</p>
+            <div class="project-card__tags">
               <span class="tag">HTML</span>
               <span class="tag">CSS</span>
             </div>
-            <p>
-              Création d'un site web statique sur la santé, avec un accent sur la qualité du code.
-            </p>
-            <ul class="project__list">
-              <li>✔ Site responsive</li>
-              <li>✔ Formulaire de contact</li>
-              <li>✔ Lighthouse Performance : 95/100</li>
-            </ul>
-            <!--<div class="project__links">
-              <a class="btn btn&#45;&#45;small" href="projet-1.html">Voir</a>
-            </div>-->
-          </article>
-          <!-- Projet 4 -->
-          <article class="project card">
-            <div class="project__top">
-              <h3>Projet 4 - Gestion de BDD</h3>
+          </button>
+
+          <!-- Project 4 -->
+          <button class="project-card" data-project="3">
+            <img class="project-card__image" src="" alt="Gestion de BDD">
+            <h3>Gestion de BDD</h3>
+            <p class="project-card__subtitle">Automatisation et interface graphique</p>
+            <div class="project-card__tags">
               <span class="tag">SQL</span>
               <span class="tag">Python</span>
               <span class="tag">C#</span>
             </div>
-            <p>
-              Gestion d’une BDD avec automatisation des requêtes et interface graphique.
-            </p>
-            <ul class="project__list">
-              <li>✔ UCréation / modélisation de la BDD</li>
-              <li>✔ Requêtes automatisées en Python</li>
-              <li>✔ Interface C# pour afficher les données</li>
-            </ul>
-            <!--<div class="project__links">
-              <a class="btn btn&#45;&#45;small" href="projet-1.html">Voir</a>
-            </div>-->
-          </article>
+          </button>
         </div>
       </div>
     </section>
+
+    <!-- Project Modal -->
+    <div class="modal" id="projectModal" aria-hidden="true">
+      <div class="modal__overlay" id="modalOverlay"></div>
+      <div class="modal__content">
+        <button class="modal__close" id="modalClose" aria-label="Fermer">×</button>
+        <div id="modalBody"></div>
+      </div>
+    </div>
 
     <!-- Contact -->
     <section class="section" id="contact">
@@ -300,3 +273,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
