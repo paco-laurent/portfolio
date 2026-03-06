@@ -156,6 +156,69 @@ const projectsData = [
       "Intégration multi-technologies"
     ],
     technologies: ["SQL", "Python", "C#"]
+  },
+  {
+    title: "Jeu de plateau",
+    image: "assets/lowatem.png",
+    description: "Application pour gérer des parties de jeu de plateau.",
+    details: "Une application Java pour gérer des parties de jeu de plateau avec une interface utilisateur Swing.",
+    features: [
+      "Gestion des joueurs",
+      "Suivi des scores",
+      "Interface utilisateur intuitive"
+    ],
+    stack: [
+      "Java",
+      "Swing"
+    ],
+    learning: [
+      "Développement d'interface utilisateur",
+      "Gestion des événements",
+      "Programmation orientée objet"
+    ],
+    technologies: ["Java", "Swing"]
+  },
+  {
+    title: "Visualisation de graphe",
+    image: "assets/graphes.png",
+    description: "Outil interactif pour visualiser des graphes.",
+    details: "Un outil Python permettant de visualiser des graphes avec Matplotlib.",
+    features: [
+      "Affichage interactif",
+      "Personnalisation des graphes",
+      "Export des résultats"
+    ],
+    stack: [
+      "Python",
+      "Matplotlib"
+    ],
+    learning: [
+      "Manipulation de données",
+      "Création de visualisations",
+      "Utilisation de bibliothèques Python"
+    ],
+    technologies: ["Python", "Matplotlib"]
+  },
+  {
+    title: "Installation de poste",
+    image: "assets/vm.png",
+    description: "Automatisation de l'installation et configuration de postes.",
+    details: "Un script Bash et Ansible pour automatiser l'installation et la configuration des postes de travail.",
+    features: [
+      "Installation automatisée",
+      "Configuration réseau",
+      "Déploiement de logiciels"
+    ],
+    stack: [
+      "Bash",
+      "Ansible"
+    ],
+    learning: [
+      "Automatisation des tâches",
+      "Gestion de configuration",
+      "Scripting avancé"
+    ],
+    technologies: ["Bash", "Ansible"]
   }
 ];
 
@@ -203,13 +266,6 @@ function openProjectModal(index) {
         ${project.learning.map(item => `<li style="margin: 6px 0;">${item}</li>`).join('')}
       </ul>
     </div>
-
-    <div style="border-top: 1px solid var(--border); padding-top: 16px; margin-top: 16px;">
-      <h3 style="margin-top: 0; margin-bottom: 12px; font-size: 1.2rem;">Liens</h3>
-      <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-        <a href="#contact" class="btn btn--small" style="display: inline-flex;">Me contacter</a>
-      </div>
-    </div>
   `;
 
   projectModal.classList.add("is-open");
@@ -226,6 +282,15 @@ document.querySelectorAll(".project-card").forEach(card => {
   card.addEventListener("click", () => {
     const projectIndex = card.getAttribute("data-project");
     openProjectModal(parseInt(projectIndex));
+  });
+
+  // Keyboard support for accessibility
+  card.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      const projectIndex = card.getAttribute("data-project");
+      openProjectModal(parseInt(projectIndex));
+    }
   });
 });
 

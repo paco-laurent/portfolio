@@ -192,7 +192,6 @@ img{ max-width:100%; display:block; }
   color: var(--muted);
   font-size: 1.08rem;
 }
-.hero__cta{ display:flex; gap: 12px; flex-wrap: wrap; }
 .hero__links{ margin-top: 16px; display:flex; gap: 14px; flex-wrap: wrap; }
 .link{ color: var(--muted); text-decoration: underline; text-underline-offset: 3px; }
 .link:hover{ color: var(--text); }
@@ -251,7 +250,6 @@ img{ max-width:100%; display:block; }
 }
 .card h3{ margin:0 0 8px; }
 
-/* ========== Skills ========== */
 .skills{
   display:grid;
   grid-template-columns: repeat(3, 1fr);

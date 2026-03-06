@@ -165,8 +165,7 @@
         </div>
 
         <div class="projects">
-          <!-- Project 1 -->
-          <button class="project-card" data-project="0">
+          <div class="project-card" data-project="0" role="button" tabindex="0">
             <img class="project-card__image" src="" alt="Musical puzzle">
             <h3>Musical puzzle</h3>
             <p class="project-card__subtitle">Puzzle musical collaboratif en React</p>
@@ -175,10 +174,9 @@
               <span class="tag">API</span>
               <span class="tag">Auth</span>
             </div>
-          </button>
+          </div>
 
-          <!-- Project 2 -->
-          <button class="project-card" data-project="1">
+          <div class="project-card" data-project="1" role="button" tabindex="0">
             <img class="project-card__image" src="" alt="Gestion de tournois">
             <h3>Gestion de tournois</h3>
             <p class="project-card__subtitle">Application de gestion pour établissements</p>
@@ -187,10 +185,9 @@
               <span class="tag">PHP/Symfony</span>
               <span class="tag">Bootstrap</span>
             </div>
-          </button>
+          </div>
 
-          <!-- Project 3 -->
-          <button class="project-card" data-project="2">
+          <div class="project-card" data-project="2" role="button" tabindex="0">
             <img class="project-card__image" src="" alt="Site web statique">
             <h3>Site web statique</h3>
             <p class="project-card__subtitle">Site responsive sur la santé</p>
@@ -198,10 +195,9 @@
               <span class="tag">HTML</span>
               <span class="tag">CSS</span>
             </div>
-          </button>
+          </div>
 
-          <!-- Project 4 -->
-          <button class="project-card" data-project="3">
+          <div class="project-card" data-project="3" role="button" tabindex="0">
             <img class="project-card__image" src="" alt="Gestion de BDD">
             <h3>Gestion de BDD</h3>
             <p class="project-card__subtitle">Automatisation et interface graphique</p>
@@ -210,7 +206,37 @@
               <span class="tag">Python</span>
               <span class="tag">C#</span>
             </div>
-          </button>
+          </div>
+
+          <div class="project-card" data-project="4" role="button" tabindex="0">
+            <img class="project-card__image" src="assets/lowatem.png" alt="Jeu de plateau">
+            <h3>Jeu de plateau</h3>
+            <p class="project-card__subtitle">Application pour gérer des parties de jeu de plateau</p>
+            <div class="project-card__tags">
+              <span class="tag">Java</span>
+              <span class="tag">Swing</span>
+            </div>
+          </div>
+
+          <div class="project-card" data-project="5" role="button" tabindex="0">
+            <img class="project-card__image" src="assets/graphes.png" alt="Visualisation de graphe">
+            <h3>Visualisation de graphe</h3>
+            <p class="project-card__subtitle">Outil interactif pour visualiser des graphes</p>
+            <div class="project-card__tags">
+              <span class="tag">Python</span>
+              <span class="tag">Matplotlib</span>
+            </div>
+          </div>
+
+          <div class="project-card" data-project="6" role="button" tabindex="0">
+            <img class="project-card__image" src="assets/vm.png" alt="Installation de poste">
+            <h3>Installation de poste</h3>
+            <p class="project-card__subtitle">Automatisation de l'installation et configuration de postes</p>
+            <div class="project-card__tags">
+              <span class="tag">Bash</span>
+              <span class="tag">Ansible</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -238,7 +264,9 @@
           </p>
 
           <form class="form" id="contactForm" action="https://formspree.io/f/mbdavvkr" method="POST">
-            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+            <label style="display:none;">
+              <input type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+            </label>
             <div class="form__row">
               <label>
                 Nom
