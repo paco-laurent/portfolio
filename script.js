@@ -71,84 +71,96 @@ contactForm?.addEventListener("submit", async (e) => {
 const projectsData = [
   {
     title: "Musical puzzle",
-    image: "",
-    description: "Puzzle musical collaboratif en React.",
-    details: "Site pour jouer à un puzzle musical collaboratif en React.",
+    image: "assets/puzzle.png",
+    description: "Jeu de puzzle musical collaboratif développé en React et TypeScript.",
+    details: "Application web réalisée en React + TypeScript permettant de jouer à un puzzle musical collaboratif, avec saisie d’UID, sélection de sons, réponses via API et affichage des statistiques des groupes.",
     features: [
-      "Authentification",
-      "Requête API",
-      "Contextes, hooks, providers..."
+      "Saisie et stockage local de l’UID",
+      "Sélection et lecture de sons",
+      "Réponses au puzzle via API",
+      "Affichage des messages de succès et d’erreur",
+      "Page de statistiques des groupes"
     ],
     stack: [
-      "Front : React, JavaScript",
+      "React",
       "API REST",
-      "Authentification",
+      "TypeScript",
+      "localStorage"
     ],
     learning: [
-      "Gestion d'état avec React",
-      "Communication avec une API",
-      "Collaboration en temps réel"
+      "Gestion d’état avec React",
+      "Utilisation de TypeScript dans une application React",
+      "Communication avec une API REST",
+      "Manipulation de données et rendu conditionnel",
+      "Structuration de composants et bonnes pratiques"
     ],
-    technologies: ["React", "API", "Auth"]
+    technologies: ["React", "TypeScript", "API REST", "localStorage"]
   },
   {
     title: "Gestion de tournois",
-    image: "",
-    description: "Application de gestion pour établissements.",
-    details: "Application web de gestion de tournois à destination d'établissements scolaires.",
+    image: "assets/tournois.png",
+    description: "Application web de gestion de tournois pour établissements.",
+    details: "Application web de gestion de tournois personnalisé pour des établissements scolaires.",
     features: [
-      "Analyse du besoin client",
-      "CRUD + validation",
-      "Base de données"
+        "Analyse du besoin client",
+        "Méthodologie Agile",
+        "CRUD + validation",
+        "Phase finale personnalisée",
+        "Base de données"
     ],
     stack: [
-      "Front : Bootstrap, HTML/CSS",
-      "Back : PHP/Symfony",
-      "DB : MySQL"
+        "Front : Bootstrap, HTML/CSS",
+        "Back : PHP/Symfony",
+        "DB : MySQL"
     ],
     learning: [
-      "Développement Full-Stack",
-      "Design de base de données",
-      "Validation de formulaires"
+        "Analyse et gestion de projet",
+        "Développement Full-Stack",
+        "Design de base de données",
+        "Validation de formulaires"
     ],
     technologies: ["SQL", "PHP/Symfony", "Bootstrap"]
   },
   {
     title: "Site web statique",
-    image: "",
+    image: "assets/site.png",
     description: "Site responsive sur la santé.",
-    details: "Création d'un site web statique sur la santé, avec un accent sur la qualité du code.",
+    details: "Création d'un site web statique autour de la santé, ici du judo , avec un accent sur la qualité du code.",
     features: [
-      "Site responsive",
-      "Formulaire de contact",
-      "Lighthouse Performance : 95/100"
+        "Site responsive",
+        "Formulaire de contact",
+        "Lighthouse Performance : 95/100",
+        "Fiche persona et parcours utilisateur",
+        "Maquette et prototype sur Figma"
     ],
     stack: [
-      "HTML5 sémantique",
-      "CSS3 moderne",
-      "Mobile-first"
+        "HTML5",
+        "CSS3",
+        "Figma"
     ],
     learning: [
-      "Responsive design",
-      "Performance et SEO",
-      "Accessibilité Web"
+        "Analyse de besoins et conception UX",
+        "Responsive design",
+        "Performance web",
+        "Accessibilité Web"
     ],
     technologies: ["HTML", "CSS"]
   },
   {
-    title: "Gestion de BDD",
-    image: "",
-    description: "Automatisation et interface graphique.",
-    details: "Gestion d'une BDD avec automatisation des requêtes et interface graphique.",
+    title: "Visualisation de données",
+    image: "assets/graphique.png",
+    description: "Stockage, interface et génération de graphiques.",
+    details: "Gestion d'une BDD avec automatisation des requêtes en python et interface graphique en C# pour générer des graphiques.",
     features: [
-      "Création / modélisation de la BDD",
-      "Requêtes automatisées en Python",
-      "Interface C# pour afficher les données"
+        "Création / modélisation de la BDD",
+        "Requêtes automatisées en Python",
+        "Interface C# pour afficher les données",
+        "Génération de graphiques à partir des données"
     ],
     stack: [
-      "DB : SQL (Oracle/MySQL)",
-      "Backend : Python",
-      "Frontend : C# WinForms"
+        "DB : SQL ",
+        "Backend : Python",
+        "Frontend : C# WinForms"
     ],
     learning: [
       "Modélisation de données",
@@ -160,65 +172,64 @@ const projectsData = [
   {
     title: "Jeu de plateau",
     image: "assets/lowatem.png",
-    description: "Application pour gérer des parties de jeu de plateau.",
-    details: "Une application Java pour gérer des parties de jeu de plateau avec une interface utilisateur Swing.",
+    description: "Application pour gérer des parties de jeu de plateau et création d'une IA.",
+    details: "Une application Java pour gérer des parties de jeu de plateau et création d'une IA pour y jouer.",
     features: [
       "Gestion des joueurs",
       "Suivi des scores",
-      "Interface utilisateur intuitive"
+      "Implémentation de règles complexes",
+      "Création d'une IA pour jouer contre les utilisateurs"
     ],
     stack: [
       "Java",
-      "Swing"
     ],
     learning: [
-      "Développement d'interface utilisateur",
+      "Création d'IA basique",
       "Gestion des événements",
       "Programmation orientée objet"
     ],
-    technologies: ["Java", "Swing"]
+    technologies: ["Java"]
   },
   {
     title: "Visualisation de graphe",
     image: "assets/graphes.png",
     description: "Outil interactif pour visualiser des graphes.",
-    details: "Un outil Python permettant de visualiser des graphes avec Matplotlib.",
+    details: "Un outil Java permettant de visualiser des graphes selon différents algorithmes.",
     features: [
       "Affichage interactif",
       "Personnalisation des graphes",
-      "Export des résultats"
     ],
     stack: [
-      "Python",
-      "Matplotlib"
+      "Java",
     ],
     learning: [
       "Manipulation de données",
       "Création de visualisations",
-      "Utilisation de bibliothèques Python"
+      "Implementation d'algorithmes de graphes"
     ],
-    technologies: ["Python", "Matplotlib"]
+    technologies: ["Java"]
   },
   {
     title: "Installation de poste",
     image: "assets/vm.png",
-    description: "Automatisation de l'installation et configuration de postes.",
-    details: "Un script Bash et Ansible pour automatiser l'installation et la configuration des postes de travail.",
+    description: "Installation et configuration d'une machine virtuelle sous linux.",
+    details: "Installation et configuration d'une machine virtuelle sous linux sous contraintes de stockage, et rédaction d'un manuelle technique.",
     features: [
-      "Installation automatisée",
       "Configuration réseau",
-      "Déploiement de logiciels"
+      "Installation de linux",
+      "Optimisation de l'espace de stockage",
+      "Rédaction d'un manuel technique détaillé"
     ],
     stack: [
       "Bash",
-      "Ansible"
+      "Linux Mint"
     ],
     learning: [
-      "Automatisation des tâches",
-      "Gestion de configuration",
-      "Scripting avancé"
+        "Configuration de Linux",
+        "Avantages et inconvénients des machines virtuelles",
+        "Redaction technique"
     ],
-    technologies: ["Bash", "Ansible"]
+    technologies: ["Bash", "Linux"]
   }
 ];
 
